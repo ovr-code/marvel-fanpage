@@ -1,0 +1,44 @@
+/* This is mobile viewports */
+
+@media only screen and (max-width: 480px) {
+  section {
+    color: var(--main-bg-color);
+    overflow: hidden;
+  }
+
+  nav {
+    flex-direction: column;
+    height: max-content;
+    padding: 1rem 1rem;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .images {
+    box-shadow: 0 7px 10px -2px rgba(255, 255, 255, 0.3);
+  }
+
+  .main {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movies,
+  .quotes {
+    padding: 0;
+    margin: 0;
+  }
+  .movie-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
