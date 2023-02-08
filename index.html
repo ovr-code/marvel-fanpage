@@ -4,8 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="tile" content="A fanmade marvel fanpage">
+    <meta name="description" content="A simple landing page for Marvel fans">
+    <meta name="keywords" content="Marvel, Fanpage, Landing Page, Odin Project">
+    <meta name="author" content="OvrCode">
+    <meta name="theme-color" content="#000000">
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Marvel Fanpage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ovrcode.github.io/marvel-fanpage/">
+    <meta property="og:image" content="https://ovrcode.github.io/marvel-fanpage/assets/main-logo.png">
+    <meta property="og:description" content="A simple landing page for Marvel fans">
+    <meta property="og:site_name" content="Marvel Fanpage">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="en_CA">
+    <meta property="og:locale:alternate" content="en_AU">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@__ovrCode__">
+    <meta name="twitter:creator" content="@__ovrCode__">
+    <meta name="twitter:title" content="Marvel Fanpage">
+    <meta name="twitter:description" content="A simple landing page for Marvel fans">
+    <meta name="twitter:image" content="https://ovrcode.github.io/marvel-fanpage/assets/main-logo.png">
+    <meta name="twitter:image:alt" content="Marvel Fanpage">
+    <meta name="twitter:domain" content="https://ovrcode.github.io/marvel-fanpage/">
+    <meta name="twitter:app:country" content="US">
+    <meta name="twitter:app:name:iphone" content="Marvel Fanpage">
+    <meta name="twitter:app:id:iphone" content="https://ovrcode.github.io/marvel-fanpage/">
+    <meta name="twitter:app:url:iphone" content="https://ovrcode.github.io/marvel-fanpage/">
+    
+    
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/marvel-M.svg"/>
+     
+    <!-- Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+     
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Marvel Fanpage</title>
   </head>
   <body>
     <!-- A Simple Ladning Page as MARVEL fanpage ♥️ -->
@@ -13,17 +55,112 @@
     <!-- Nav will be fixed at the top of the section  -->
 
     <section class="container">
-      <!-- Division 01 -- Nav BAR -->
+      <!-- Divison 01 -- Nav BAR -->
       <nav>
-        <div>logo</div>
-        <div>
+        <div class="logo">
+        <a href="">
+            <img class="main-logo" src="./assets/main-logo.png" alt="" />
+        </a>
+        </div>
+        <div class="links">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#join">Join</a></li>
           </ul>
         </div>
       </nav>
+
+      <!-- Divison 02 -- Hero Section -->
+
+      <main class="hero">
+        <div class="texts">
+          <h1>
+            Get rewarded for being
+            <br />
+            <span class="marvelRed">a marvel fan</span>
+          </h1>
+          <p>Cool Rewards for Marvel Insiders New ones added regularly</p>
+          <button class="btn">
+            <a href="https://twitter.com/__ovrCode__" target="_blank">
+              Join Now
+            </a>
+          </button>
+        </div>
+        <div class="images">
+          <img src="./assets/hero.jpg" alt="" />
+        </div>
+      </main>
+
+    
+      </div>
     </section>
-  </body>
+
+    <!-- Divison 03 -- Information Section -->
+      <!-- Divison 03 -- Upcoming Movies  -->
+      <div id="movies" class="movies">
+        <h2> Marvel Studios Movies</h2>
+
+        <div class="movie-grid">
+          <div class="grid">
+            <img src="./assets/01.jpg" alt="" />
+            <div class="movie-details">
+              <h3>Guardians of Galaxy Vol.3</h3>
+              <p>May 05 2023 </p>
+            </div>
+          </div>
+          <div class="grid">
+            <img src="./assets/02.jpg" alt="" />
+            <h3>Ant-Man and The Wasp: Quantumania</h3>
+            <p>FEB 17, 2023</p>
+          </div>
+          <div class="grid">
+            <img src="./assets/03.jpg" alt="" />
+            <h3>Black Panther: Wakanda Forever
+
+                </h3>
+            <p>2022</p>
+          </div>
+          <div class="grid">
+            <img src="./assets/04.jpg" alt="" />
+            <h3>Thor: Love and Thunder</h3>
+            <p>2022</p>
+          </div>
+          <div class="grid">
+            <img src="./assets/05.jpg" alt="" />
+            <h3>Doctor Strange in the Multiverse of Madness
+
+            <p>2022</p>
+          </div>
+        </div>
+
+        <!-- Divison 04 -- Quotes services -->
+        
+        <div id="quotes" class="quotes">
+            <h2>
+                <!-- A Ironman Quote from Iron movie -->
+                “Whosoever holds this hammer, if he be worthy, shall possess the power of Thor."
+
+            </h2>
+
+            <h4>Stan Lee</h4>
+        </div>
+
+        <div id="join" class="join">
+            <h2>Join the Marvel Insider Program</h2>
+            <p>Get rewarded for being a Marvel fan</p>
+            <button class="joinButton"><a href="https://twitter.com/__ovrCode__" target="_blank">
+              Join Now
+            </a></button>
+        </div>
+
+        <footer class="footer">
+            <p>
+                This is Simple Project done for The Odin Project
+            </p>
+            <p>
+                © Educational Purposes Only
+            </p>
+
+        </footer>
 </html>
